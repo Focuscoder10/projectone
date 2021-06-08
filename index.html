@@ -16,7 +16,7 @@
 <body>
     <!--header-->
     <header>
-        <div class="container">
+        <div id="container">
             <!--partie gauche logo reservia-->
             <div class="logo">
                 <img src="images/Reservia.svg">
@@ -31,7 +31,41 @@
     </header>
 
     <!--navigation-->
-    <nav></nav>
+    <nav>
+        <div id="container">
+            <div class="search_box">
+                <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+                <div class="search"> <!--ensemble comprenant l'icone de localisation le champ de saisie et le bouton rechercher -->
+                    <div class="icone">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="research">
+                    <form>
+                        <input type="search" id="site-search" name="search" placeholder="Marseille,France">
+                        <button type="recherche">Rechercher</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <div class="filtres"> <!--ensemble avec les icones et le nom de chaque filtre-->
+                <h2>Filtres</h2>
+                <ul>
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <li class="filter">Économique</li>
+                    <i class="fa-solid fa-child"></i>
+                    <li class="filter">Familial</li>
+                    <i class="fa-solid fa-heart"></i>
+                    <li class="filter">Romantique</li>
+                    <i class="fa-solid fa-dog"></i>
+                    <li class="filter">Animaux autorisés</li>
+                </ul>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-info">Plus de 500 logements sont disponnibles dans cette ville</i>
+            </div>
+        </div>
+    </nav>
 
     <!--section1 hébergements-->
     <section id="section_location">
