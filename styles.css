@@ -1,3 +1,158 @@
-h1 {
-    color: brown;
+/*Réglages général*/
+
+html ,body{
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+a:link 
+    { 
+     text-decoration:none; 
+     }
+
+p{
+    font-size: 85%;
+}
+
+/*header*/
+
+.filter:hover{
+    color: red;
+}
+
+.hpage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.color13{
+    color: #0065FC;
+}
+.color2{
+    color: black;
+}
+
+/*icone barre de recherche et bouton*/
+
+.icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    width: 50px;
+    height: 45px;
+}
+
+.search{
+    display: flex;
+}
+
+
+input{
+    color: black;
+    font-weight: bold;
+    height: 45px;
+    padding: 10px;
+}
+
+button{
+    background-color: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px #0065FC;
+    color: white;
+    font-weight: bold;
+    height: 45px;
+    width: 115px;
+}
+/* filtres et icones boites parents*/
+.filtres{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    
+}
+
+.filtreIconTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 20px 20px;
+    border: 2px solid #F2F2F2;
+    height: 40px;
+    margin-left: 25px;
+
+}
+/* changement de couleur au survol des filtres*/
+
+.filtreIconTitle:hover > .filtreIcon{
+    color: #0065FC;
+}
+
+.filtreIconTitle:hover > .filtreName{
+    color: #0065FC;
+}
+
+/* config icones des filtres et nom associés enfants*/
+
+.filtreIcon{
+    display: flex;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 20px;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtreName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+/* partie information entre les filtres et la section hébergements*/
+
+.info{
+    display: flex;
+}
+
+.icInf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.incInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px 20px 20px 20px;
+    height: 22px;
+    width: 22px;
+    font-size: 12px;
+    color: #0065FC;
+}
+
+.textInf{
+    margin-left: 15px;
 }
