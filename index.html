@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    
     
     
     <title>Reservia</title>
@@ -12,49 +16,44 @@
 <body>
     <!--header-->
     <header>
-        
+        <div class="hpage">
             <!--partie gauche logo reservia-->
             <div class="logo">
-                <img src="images/Reservia.svg">
+                <img src="images/Reservia.svg" alt="logo Reservia">
             </div>
             <!--partie droite encre pour section 1 et 2-->
             <nav>
-                <a href="#location">Hébergements</a>
-                <a href="#activity">Activités</a>
-                <a href="">S'inscrire</a>
+                <div><a class="color13" href="#location">Hébergements</a></div>
+                <div><a class="color2" href="#activity">Activités</a></div>
+                <div><a class="color13" href="">S'inscrire</a></div>
             </nav>
-        
+        </div>
     </header>
 
     <!--navigation-->
     <section>
         <div id="location">
             <div class="search_box">
-                <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+                <h3 class="textGras">Trouvez votre hébergement pour des vacances de rêves</h3>
                 <p>En plein centre ville ou en pleine nature</p>
                 <div class="search"> <!--ensemble comprenant l'icone de localisation le champ de saisie et le bouton rechercher -->
                     <div class="icone">
-                        <i class="fa-solid fa-location-dot"></i>
+                        <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <div class="research">
-                    <form>
-                        <input type="search" id="site-search" name="search" placeholder="Marseille,France">
-                        <button type="recherche">Rechercher</button>
-                    </form>
-                    </div>
+                    <div class="entryField"><input type="search" id="site-search" name="search" placeholder="Marseille,France"></div>
+                    <div class="myResearch"><button type="monBoutton">Rechercher</button></div>
                 </div>
             </div>
             <div class="filtres"> <!--ensemble avec les icones et le nom de chaque filtre-->
-                <h2>Filtres</h2>
-                <ul>
-                    <li class="filter"><i class="fas fa-money-bill-wave"></i>Économique</li>
-                    <li class="filter"><i class="fa-solid fa-child"></i>Familial</li>
-                    <li class="filter"><i class="fa-solid fa-heart"></i>Romantique</li>
-                    <li class="filter"><i class="fa-solid fa-dog"></i>Animaux autorisés</li>
-                </ul>
+                <div><h3>Filtres</h3></div>
+                    <div class="filtreIconTitle"><i class="fas fa-money-bill-wave filtreIcon"></i><div class="filtreName">Économique</div></div>
+                    <div class="filtreIconTitle"><i class="fas fa-child filtreIcon"></i><div class="filtreName">Familial</div></div>
+                    <div class="filtreIconTitle"><i class="fas fa-heart filtreIcon"></i><div class="filtreName">Romantique</div></div>
+                    <div class="filtreIconTitle"><i class="fas fa-dog filtreIcon"></i><div class="filtreName">Animaux autorisés</div></div>
             </div>
             <div class="info">
-                <i class="fa-solid fa-info">Plus de 500 logements sont disponnibles dans cette ville</i>
+                <div class="icInf"><i class="fas fa-info incInfo"></i></div>
+                <div class="textInf"><p>Plus de 500 logements sont disponnibles dans cette ville</p></div>
             </div>
         </div>
     </section>
