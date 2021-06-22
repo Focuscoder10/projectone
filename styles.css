@@ -17,8 +17,8 @@ a:link
 
 p{
     font-size: 85%;
+    margin-bottom: 5px;
 }
-
 /*header*/
 
 .filter:hover{
@@ -138,6 +138,7 @@ button{
 
 .info{
     display: flex;
+    padding-bottom: 25px;
 }
 
 .icInf{
@@ -171,8 +172,9 @@ button{
 }
 
 .locat{
+    display: flex;
+    flex-wrap: wrap;
     background-color: #F2F2F2;
-    padding: 0px 36px 0px 36px;
     margin: 0px 36px 0px 0px;
     width: 880px;
     height: 620px;
@@ -184,28 +186,40 @@ button{
     color: #0065FC;
 }
 
+.title_hm{
+    display: flex;
+    align-items: baseline;
+    margin-left: 62px;
+    height: 60px;
+    padding-top: 20px;
+}
 .massilia{
     width: 880px;
+    
 }
 
-.multi_boxh,.multi_boxb{
+
+.more{
     display: flex;
-    justify-content: space-between;
-    height: 40%;
-    
-
-}   
-
+    align-items: flex-end;
+    height: 50px;
+    margin-left: 62px;
+}
 
 .card_h{
-    width: 250px;
-    height: 200px;
+    display: flex;
+    width: 320px;
+    height: 190px;
     background-color: white;
     border: 4px white solid;
     border-radius: 20px;
+    flex-direction: column;
     position: relative;
-    margin
+    margin-left: 50px;
+    margin-bottom: 48px;
 }
+
+
 
 .photo_h{
     display: flex;
@@ -217,21 +231,29 @@ button{
     border-radius: 15px 15px 0px 0px;
     background-size: cover;
     background-position: center;
+    object-fit: cover;
+    object-position: 58% 54%;
 }
 
 .night_h{
-    width: 230px;
-    height: 80px;
+    width: 240px;
+    height: 60px;
     background-color: white;
+    padding-left: 10px;
+    padding-top: 7px;
+    margin-top: 110px;
     position: absolute;
-    border-radius: 15px 15px 15px 15px;
+    
 }
 
 .hotel_name_price > h4 {
     margin: 0%;
 }
     
-
+.hotel_name_pricep > .hotel_pop_title{
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
 
 /* partie les plus populaires*/
 .fav{                             /* boite général*/
@@ -239,13 +261,17 @@ button{
     width: 420px;
     height: 620px;
     border-radius: 20px;
-    padding: 0px 36px 0px 36px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 /*partie titre et icone rubrique les plus populaires*/
 .titlepop{
     display: flex;
     justify-content: space-between;
+    height: 45px;
+    margin-left: 70px;
+    margin-top: 20px;
 }
 
 .iconepop{
@@ -254,7 +280,19 @@ button{
     justify-content: center;
     margin-right: 30px;
 }
+
+.iconepop > .arrow{
+    margin-top: 20px;
+    font-size: larger;
+}
 /*carte avec photo texte icones*/
+.famous{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 530px;
+}
+
 .photo_p{
     display: flex;
     height: 125px;
@@ -262,25 +300,172 @@ button{
 }
 
 .night_p{
-    width: 250px;
+    width: 180px;
     height: 125px;
     background-color: white;
     position: absolute;
-    margin-left: 115px;
+    margin-left: 145px;
+    padding-left: 20px;
 }
 .card_p{
     display: flex;  
-    height: 125px;
+    height: 150px;
+    width: 450px;
     position: relative;
     background-color: white;
     border: 4px white solid;
     border-radius: 20px;
+    margin-left: 70px;
 }
 
 .photo_p > .fam_p{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 125px;
+    height: 150px;
     border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+    display: block;
+}
+
+.stars_pop{
+    display: flex;
+    height: 62px;
+    align-items: flex-end;
+}
+
+/*partie activités à Marseille bloc principaux*/
+#activity{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.activ_marseille{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bloc_1{
+    width: 100%;
+    height: 600px;
+}
+.activ_2{
+    width: 23%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/*réglages titres cartes d'activités*/
+.title_place{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.name_activity{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+    width: 95%;
+}
+
+/*réglages bloc cartes entier*/
+.activ_cards_port{
+    width: 23%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+}
+.activ_cards_fort{
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+    width: 100%;
+    height: 320px;
+}
+.activ_cards_iles{
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+    height: 245px;
+}
+.activ_cards_parc{
+    width: 23%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+}
+.activ_cards_dame{
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+}
+.activ_cards_long{
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+}
+/* réglages images*/
+.localisation_activity_port > .port{
+    width: 100%;
+    height: 535px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+.localisation_activity_fort > .fort{
+    width: 100%;
+    height: 250px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+.localisation_activity_iles > .iles{
+    width: 100%;
+    height: 180px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+.localisation_activity_parc > .parc{
+    width: 100%;
+    height: 535px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+.localisation_activity-dame > .dame{
+    width: 100%;
+    height: 210px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+.localisation_activity_long > .long{
+    width: 100%;
+    height: 210px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+/*réglages footer*/
+
+.foot{
+    background-color: #F2F2F2;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-top: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .about1 .about3{
+    height: 150px;
+}
+.about1{
+    margin-left: 2%;
+}
+.about3{
+    margin-right: 25%;
 }
