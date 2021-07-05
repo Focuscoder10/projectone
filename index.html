@@ -12,23 +12,38 @@
     
     
     <title>Reservia</title>
+    <style>
+        .myResearch span {
+          display: none;
+        }
+        @media (min-width: 768px) {
+          .myResearch span {
+            display: inline;
+          }
+          .myResearch i {
+            display: none;
+          }
+        }
+    </style>
     
 </head>
 <body>
-<center>
     <!--header-->
     <header>
         <div class="hpage">
             <!--partie gauche logo reservia-->
             <div class="logo">
-                <img src="images/Reservia.svg" alt="logo Reservia">
+                <img class="log_reservia" src="images/Reservia.svg" alt="logo Reservia">
             </div>
             <!--partie droite encre pour section 1 et 2-->
-            <nav>
-                <div><a class="color13" href="#location">Hébergements</a></div>
-                <div><a class="color2" href="#activity">Activités</a></div>
-                <div><a class="color14" href="">S'inscrire</a></div>
-            </nav>
+            <!-- <nav> -->
+
+                <div class="size_color2"><a class="color14" href=""><strong>S'inscrire</strong></a></div>
+            <!-- </nav> -->
+        </div>
+        <div class="menuQuiBouge">
+            <div class="size_color1"><a class="color13" href="#location">Hébergements</a></div>
+            <div class="size_color"><a class="color2" href="#activity">Activités</a></div>
         </div>
     </header>
 
@@ -36,22 +51,29 @@
     <section>
         <div id="reservation">
             <div class="search_box">
-                <h3 class="textGras">Trouvez votre hébergement pour des vacances de rêves</h3>
+                <h3 class="textGras"><strong>Trouvez votre hébergement pour des vacances de rêves</strong></h3>
                 <p class="search_paragraph">En plein centre ville ou en pleine nature</p>
                 <div class="search"> <!--ensemble comprenant l'icone de localisation le champ de saisie et le bouton rechercher -->
                     <div class="icone">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <div class="entryField"><input type="search" id="site-search" name="search" placeholder="Marseille,France"></div>
-                    <div class="myResearch"><button type="monBoutton">Rechercher</button></div>
+                    <div class="myResearch">
+                        <button type="button">
+                          <span>Rechercher</span>
+                          <i class="fas fa-search"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="filtres"> <!--ensemble avec les icones et le nom de chaque filtre-->
-                <div><h3>Filtres</h3></div>
-                    <div class="filtreIconTitle"><i class="fas fa-money-bill-wave filtreIcon"></i><div class="filtreName">Économique</div></div>
-                    <div class="filtreIconTitle"><i class="fas fa-child filtreIcon"></i><div class="filtreName">Familial</div></div>
-                    <div class="filtreIconTitle"><i class="fas fa-heart filtreIcon"></i><div class="filtreName">Romantique</div></div>
-                    <div class="filtreIconTitle"><i class="fas fa-dog filtreIcon"></i><div class="filtreName">Animaux autorisés</div></div>
+                    <div><h3>Filtres</h3></div>
+                    <div class="multi_filtres">
+                        <div class="filtreIconTitle"><i class="fas fa-money-bill-wave filtreIcon"></i><div class="filtreName">Économique</div></div>
+                        <div class="filtreIconTitle"><i class="fas fa-child filtreIcon"></i><div class="filtreName">Familial</div></div>
+                        <div class="filtreIconTitle"><i class="fas fa-heart filtreIcon"></i><div class="filtreName">Romantique</div></div>
+                        <div class="filtreIconTitle"><i class="fas fa-dog filtreIcon"></i><div class="filtreName">Animaux autorisés</div></div>
+                    </div>
             </div>
             <div class="info">
                 <div class="icInf"><i class="fas fa-info incInfo"></i></div>
@@ -322,6 +344,5 @@
         </div>
 
     </footer>
-</center>   
 </body>
 </html>
