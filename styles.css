@@ -117,6 +117,7 @@ input {
   font-weight: bold;
   height: 45px;
   padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.11);    
 }
 ::placeholder {
   opacity: 1;
@@ -589,9 +590,13 @@ footer {
   .myResearch i {
     display: inline;
   }
+  .search {
+    padding-left: 23px;
+  }
   /* bouton recherche*/
   button {
     width: 50px;
+    border-radius: 15px;
   }
   /* réglages filtres*/
 
@@ -666,15 +671,24 @@ footer {
   .activ_marseille > :not(:last-child) {
     margin-right: 0;
   }
-  .localisation_activity_port > .port
+  /*.localisation_activity_port > .port
   .localisation_activity_parc > .parc
   .localisation_activity_fort > .fort
   .localisation_activity_iles > .iles
   .localisation_activity-dame > .dame
   .localisation_activity_long > .long {
     height: 135px;
+  }*/
+   
+  .localisation_activity_port > .port {
+    height: 250px;
   }
-  
+  .localisation_activity_parc > .parc {
+    height: 250px;
+  }
+.localisation_activity_iles > .iles {
+  height: 250px;
+}
   .activ_marseille > a,
   .activ_2 > a {
     margin-bottom: 20px;
